@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_p2/widgets/resp_widget.dart';
 import 'package:portfolio_p2/widgets/bottom_bar.dart';
 import 'package:portfolio_p2/widgets/carosoul.dart';
-import 'package:portfolio_p2/widgets/destination_heading.dart';
+import 'package:portfolio_p2/widgets/scoutMyProject.dart';
 import 'package:portfolio_p2/widgets/explore_drawer.dart';
 import 'package:portfolio_p2/widgets/feature_tiles.dart';
 import 'package:portfolio_p2/widgets/featured_heading.dart';
@@ -119,7 +119,8 @@ class _HomePageState extends State<HomePage> {
                   )
                 ],
               ),
-              DestinationHeading(screenSize: screenSize),
+              // scout my best projects
+              ScouteMyProject(screenSize: screenSize),
               DestinationCarousel(),
               SizedBox(height: screenSize.height / 10),
               BottomBar(),

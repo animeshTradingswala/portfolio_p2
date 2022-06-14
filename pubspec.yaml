@@ -38,6 +38,7 @@ dependencies:
   easy_dynamic_theme:
   url_strategy:
   fluro:
+  sleek_circular_slider: ^2.0.1
 
 dev_dependencies:
   flutter_test:

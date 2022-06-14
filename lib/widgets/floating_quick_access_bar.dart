@@ -18,7 +18,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
   List _isHovering = [false, false, false, false];
   List<Widget> rowElements = [];
 
-  List<String> items = ['Experience', 'Project', 'Technology', 'Services'];
+  List<String> items = ['Technology', 'Experience', 'Project', 'Services'];
   List<IconData> icons = [
     Icons.location_on,
     Icons.date_range,

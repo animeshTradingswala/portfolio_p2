@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'resp_widget.dart';
 
-class DestinationHeading extends StatelessWidget {
-  const DestinationHeading({
+class ScouteMyProject extends StatelessWidget {
+  const ScouteMyProject({
     Key? key,
     required this.screenSize,
   }) : super(key: key);

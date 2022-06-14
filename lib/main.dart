@@ -1,9 +1,7 @@
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio_p2/widgets/router.dart';
+import 'package:portfolio_p2/view/landing_page.dart';
 import 'package:url_strategy/url_strategy.dart';
-
-import 'my_home_page.dart';
 import 'theme_data.dart';
 
 void main() {
@@ -14,18 +12,23 @@ void main() {
   ));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My Bag',
       theme: lightThemeData,
       darkTheme: darkThemeData,
-      debugShowCheckedModeBanner: false,  
+      debugShowCheckedModeBanner: false,
       themeMode: EasyDynamicTheme.of(context).themeMode,
-      home: HomePage(),
-      initialRoute: '/',
-    //  onGenerateRoute: Flurorouter.router.generator,
+      home: SplashScreen(),
     );
   }
 }

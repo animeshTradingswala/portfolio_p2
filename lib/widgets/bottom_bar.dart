@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'resp_widget.dart';
-import 'bottom_bar_column.dart';
-import 'info_text.dart';
 
 class BottomBar extends StatelessWidget {
   @override

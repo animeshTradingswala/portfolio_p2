@@ -1,7 +1,9 @@
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio_p2/view/WEB/about_me_web.dart';
 
 import '../my_home_page.dart';
+import '../view/about_me_responsive.dart';
 
 class TopBarContents extends StatefulWidget {
   final double opacity;
@@ -47,7 +49,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                   });
                 },
                 onPressed: () {},
-                child: Text(
+                child: Text(  
                   'ANIMESH BANERJEE',
                   style: TextStyle(
                     color: _isHoverName ? Colors.blue[200] : Colors.white,
@@ -72,7 +74,13 @@ class _TopBarContentsState extends State<TopBarContents> {
                               : _isHovering[0] = false;
                         });
                       },
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => AboutMePager(),
+                          ),
+                        );
+                      },
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
